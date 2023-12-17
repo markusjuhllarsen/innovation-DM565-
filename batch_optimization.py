@@ -257,7 +257,7 @@ if __name__ == "__main__":
     # Time limit and order number limit to be added
 
     args = parser.parse_args()
-    orderlist = tsv2json(args.filepath, max_orders=102)
+    orderlist = tsv2json(args.filepath, max_orders=95)
     solver = Solver(orderlist, max_batch_size=14)
     #batches_random = solver.random_batches()
     #batches_greedy = solver.greedy_batches()
